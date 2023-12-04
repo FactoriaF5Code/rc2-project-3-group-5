@@ -1,0 +1,44 @@
+*{
+    outline: solid 2px red;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #070708, #070708, #363945,  #363945);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {    
+    margin-bottom: 0px;
+    font-size: 7.03vh;
+    font-family: Pacifico;
+    color: white;
+}
+
+h2 {
+    
+    font-size: 3.84vh;
+    font-family: Bellota;
+    color: white;
+}
+
+section {
+    background-image: url(./bateria.png);
+    height: 65.19vh;
+    width: 58.98vw;
+    background-size: cover;
+    box-shadow: 0px 0px 30px 10px rgba(252, 245, 245, 0.25);
+}
+
+#platilloDerecho {
+    background-color: aqua;
+    width: 500px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+
+
