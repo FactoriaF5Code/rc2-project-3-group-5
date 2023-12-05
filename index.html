@@ -18,16 +18,26 @@
     <h1>Tu golpe online</h1>
     <h2>Prueba a pulsar en cada parte de la batería o utiliza tu teclado!</h2>
     <section>
-        <div id="platilloIzquierdoAlto"></div>
-        <div id="platilloIzquierdoBajo"></div>
-        <div id="platilloDerecho"></div>
-        <div id="tamborIzquierdo"></div>
-        <div id="bombo"></div>
-        <div id="tamborDerecho"></div>
-        <div id="izquierdoSuperior"></div>
-        <div id="derechoSuperior"></div>
+        <div id="platilloIzquierdoAlto" onclick="REPplatilloIzquierdoAlto()"></div>
+        <div id="platilloIzquierdoBajo" onclick="REPplatilloIzquierdoBajo()"></div>
+        <div id="platilloDerecho" onclick="REPplatilloDerecho()"></div>
+        <div id="tamborIzquierdo" onclick="REPtamborIzquierdo()"></div>
+        <div id="bombo" onclick="REPbombo()"></div>
+        <div id="tamborDerecho" onclick="REPtamborDerecho()"></div>
+        <div id="izquierdoSuperior" onclick="REPizquierdoSuperior()"></div>
+        <div id="derechoSuperior" onclick="REPderechoSuperior()"></div>
+
+        <audio id="SONIDOplatilloIzquierdoAlto" src="./sonidos/platillo_1.mp3" type="mp3"></audio>
+        <audio id="SONIDOplatilloIzquierdoBajo" src="./sonidos/platillo_2.mp3" type="mp3"></audio>
+        <audio id="SONIDOplatilloDerecho" src="./sonidos/platillo_4.mp3" type="mp3"></audio>
+        <audio id="SONIDOtamborIzquierdo" src="./sonidos/bombo_1.mp3" type="mp3"></audio>
+        <audio id="SONIDObombo" src="./sonidos/bombo_6.mp3" type="mp3"></audio>
+        <audio id="SONIDOtamborDerecho" src="./sonidos/bombo_3.mp3" type="mp3"></audio>
+        <audio id="SONIDOizquierdoSuperior" src="./sonidos/bombo_4.mp3" type="mp3"></audio>
+        <audio id="SONIDOderechoSuperior" src="./sonidos/bombo_5.mp3" type="mp3"></audio>
     </section>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
