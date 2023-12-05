@@ -3,6 +3,7 @@
 }
 
 body {
+    cursor: url(./baqueta.png), auto;
     width: 100vw;
     height: 100vh;
     background: linear-gradient(to bottom, #070708, #070708, #363945, #363945);
