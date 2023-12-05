@@ -1,9 +1,6 @@
-* {
-    outline: solid 2px red;
-}
-
 body {
-    cursor: url(./baqueta.png), auto;
+    cursor: none;
+    overflow: hidden;
     width: 100vw;
     height: 100vh;
     background: linear-gradient(to bottom, #070708, #070708, #363945, #363945);
@@ -33,7 +30,6 @@ section {
     background-size: cover;
     box-shadow: 0px 0px 30px 10px rgba(252, 245, 245, 0.25);
     overflow: hidden;
-    /*Para que lo que salga de la seccion no se vea*/
 }
 
 #platilloDerecho {
@@ -43,7 +39,6 @@ section {
     border-radius: 50%;
     margin-top: -445px;
     margin-left: 908px;
-    cursor: pointer;
     opacity: 0.5;
 }
 
@@ -54,7 +49,6 @@ section {
     border-radius: 50%;
     margin-top: 30px;
     margin-left: -76px;
-    cursor: pointer;
     opacity: 0.5;
 }
 
@@ -65,8 +59,7 @@ section {
     border-radius: 50%;
     margin-top: 30px;
     margin-left: -30px;
-    cursor: pointer;
-    opacity: 0.5;
+    opacity: 0;
     rotate: -7deg;
 }
 
@@ -77,8 +70,7 @@ section {
     border-radius: 50%;
     margin-top: 160px;
     margin-left: 70px;
-    cursor: pointer;
-    opacity: 0.5;
+    opacity: 0;
     rotate: -5deg;
 }
 
@@ -89,8 +81,7 @@ section {
     border-radius: 50%;
     margin-top: -230px;
     margin-left: 430px;
-    opacity: 0.5;
-    cursor: pointer;
+    opacity: 0;
 
 }
 
@@ -102,8 +93,7 @@ section {
     margin-top: -350px;
     margin-left: 810px;
     rotate: 6deg;
-    opacity: 0.5;
-    cursor: pointer;
+    opacity: 0;
 }
 
 #izquierdoSuperior {
@@ -113,8 +103,7 @@ section {
     border-radius: 50%;
     margin-top: -570px;
     margin-left: 350px;
-    opacity: 0.5;
-    cursor: pointer;
+    opacity: 0;
  }
  
 #derechoSuperior {
@@ -124,6 +113,28 @@ background-color: chocolate;
 border-radius: 50%;
 margin-top: -190px; 
 margin-left: 650px;
-opacity: 0.5;
-cursor: pointer;
+opacity: 0;
 }
+
+/* ... (Otros estilos) ... */
+
+#cursorLayer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: auto;
+    z-index: 0; /* Asegura que el cursor esté en la parte superior */
+}
+
+#customCursor {
+    position: absolute;
+    width: 202px; /* Ancho de la imagen de cursor personalizado */
+    height: 202px; /* Alto de la imagen de cursor personalizado */
+    background: url('./baqueta.png') no-repeat; /* URL de la imagen personalizada */
+    background-size: cover;
+    rotate: 45deg;
+}
+
+

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./baqueta.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -18,24 +19,26 @@
     <h1>Tu golpe online</h1>
     <h2>Prueba a pulsar en cada parte de la batería o utiliza tu teclado!</h2>
     <section>
-        <div id="platilloIzquierdoAlto" onclick="REPplatilloIzquierdoAlto()"></div>
-        <div id="platilloIzquierdoBajo" onclick="REPplatilloIzquierdoBajo()"></div>
-        <div id="platilloDerecho" onclick="REPplatilloDerecho()"></div>
-        <div id="tamborIzquierdo" onclick="REPtamborIzquierdo()"></div>
-        <div id="bombo" onclick="REPbombo()"></div>
-        <div id="tamborDerecho" onclick="REPtamborDerecho()"></div>
-        <div id="izquierdoSuperior" onclick="REPizquierdoSuperior()"></div>
-        <div id="derechoSuperior" onclick="REPderechoSuperior()"></div>
+        <div id="cursorLayer"></div>
+        <div id="platilloIzquierdoAlto" onclick="tocarPlatilloIzquierdoAlto()"></div>
+        <div id="platilloIzquierdoBajo" onclick="tocarPlatilloIzquierdoBajo()"></div>
+        <div id="platilloDerecho" onclick="tocarPlatilloDerecho()"></div>
+        <div id="tamborIzquierdo" onclick="tocarTamborIzquierdo()"></div>
+        <div id="bombo" onclick="tocarBombo()"></div>
+        <div id="tamborDerecho" onclick="tocarTamborDerecho()"></div>
+        <div id="izquierdoSuperior" onclick="tocarIzquierdoSuperior()"></div>
+        <div id="derechoSuperior" onclick="tocarDerechoSuperior()"></div>
 
-        <audio id="SONIDOplatilloIzquierdoAlto" src="./sonidos/platillo_1.mp3" type="mp3"></audio>
-        <audio id="SONIDOplatilloIzquierdoBajo" src="./sonidos/platillo_2.mp3" type="mp3"></audio>
-        <audio id="SONIDOplatilloDerecho" src="./sonidos/platillo_4.mp3" type="mp3"></audio>
-        <audio id="SONIDOtamborIzquierdo" src="./sonidos/bombo_1.mp3" type="mp3"></audio>
-        <audio id="SONIDObombo" src="./sonidos/bombo_6.mp3" type="mp3"></audio>
-        <audio id="SONIDOtamborDerecho" src="./sonidos/bombo_3.mp3" type="mp3"></audio>
-        <audio id="SONIDOizquierdoSuperior" src="./sonidos/bombo_4.mp3" type="mp3"></audio>
-        <audio id="SONIDOderechoSuperior" src="./sonidos/bombo_5.mp3" type="mp3"></audio>
+        <audio id="sonidoPlatilloIzquierdoAlto" src="./sonidos/platillo_1.mp3" type="mp3"></audio>
+        <audio id="sonidoPlatilloIzquierdoBajo" src="./sonidos/platillo_2.mp3" type="mp3"></audio>
+        <audio id="sonidoPlatilloDerecho" src="./sonidos/platillo_4.mp3" type="mp3"></audio>
+        <audio id="sonidoTamborIzquierdo" src="./sonidos/bombo_2.mp3" type="mp3"></audio>
+        <audio id="sonidoBombo" src="./sonidos/bombo_1.mp3" type="mp3"></audio>
+        <audio id="sonidoTamborDerecho" src="./sonidos/bombo_2.mp3" type="mp3"></audio>
+        <audio id="sonidoIzquierdoSuperior" src="./sonidos/bombo_4.mp3" type="mp3"></audio>
+        <audio id="sonidoDerechoSuperior" src="./sonidos/bombo_5.mp3" type="mp3"></audio>
     </section>
+
 
     <script src="script.js"></script>
 </body>

@@ -1,71 +1,83 @@
-function REPplatilloIzquierdoAlto() {
-    let platilloIzquierdoAlto = document.getElementById("SONIDOplatilloIzquierdoAlto")
-    if (SONIDOplatilloIzquierdoAlto.paused) {
-        SONIDOplatilloIzquierdoAlto.play();
+const customCursor = document.createElement("div");
+customCursor.id = "customCursor";
+document.body.appendChild(customCursor);
+
+document.addEventListener("mousemove", (e) => {
+    customCursor.style.left = e.pageX - 25 + "px";
+    customCursor.style.top = e.pageY - 25 + "px";
+});
+
+
+function tocarPlatilloIzquierdoAlto() {
+    let platilloIzquierdoAlto = document.getElementById("sonidoPlatilloIzquierdoAlto");
+    if (platilloIzquierdoAlto.paused) {
+        platilloIzquierdoAlto.play();
     } else {
-        SONIDOplatilloIzquierdoAlto.currentTime = 0;
+        platilloIzquierdoAlto.currentTime = 0;
     }
 }
 
-function REPplatilloIzquierdoBajo() {
-    let platilloIzquierdoAlto = document.getElementById("SONIDOplatilloIzquierdoBajo")
-    if (SONIDOplatilloIzquierdoBajo.paused) {
-        SONIDOplatilloIzquierdoBajo.play();
+function tocarPlatilloIzquierdoBajo() {
+    let platilloIzquierdoBajo = document.getElementById("sonidoPlatilloIzquierdoBajo")
+    if (platilloIzquierdoBajo.paused) {
+        platilloIzquierdoBajo.play();
     } else {
-        SONIDOplatilloIzquierdoBajo.currentTime = 0;
+        platilloIzquierdoBajo.currentTime = 0;
     }
 }
 
-function REPplatilloDerecho() {
-    let platilloIzquierdoAlto = document.getElementById("SONIDOplatilloDerecho")
-    if (SONIDOplatilloDerecho.paused) {
-        SONIDOplatilloDerecho.play();
+function tocarPlatilloDerecho() {
+    let platilloDerecho = document.getElementById("sonidoPlatilloDerecho")
+    if (platilloDerecho.paused) {
+        platilloDerecho.play();
     } else {
-        SONIDOplatilloDerecho.currentTime = 0;
+        platilloDerecho.currentTime = 0;
     }
 }
 
-function REPtamborIzquierdo() {
-    let platilloIzquierdoAlto = document.getElementById("SONIDOtamborIzquierdo")
-    if (SONIDOtamborIzquierdo.paused) {
-        SONIDOtamborIzquierdo.play();
+function tocarTamborIzquierdo() {
+    let tamborIzquierdo = document.getElementById("sonidoTamborIzquierdo")
+    if (tamborIzquierdo.paused) {
+        tamborIzquierdo.play();
     } else {
-        SONIDOtamborIzquierdo.currentTime = 0;
+        tamborIzquierdo.currentTime = 0;
     }
 }
 
-function REPbombo() {
-    let platilloIzquierdoAlto = document.getElementById("SONIDObombo")
-    if (SONIDObombo.paused) {
-        SONIDObombo.play();
+function tocarBombo() {
+    let bombo = document.getElementById("sonidoBombo")
+    if (bombo.paused) {
+        bombo.play();
     } else {
-        SONIDObombo.currentTime = 0;
+        bombo.currentTime = 0;
     }
 }
 
-function REPtamborDerecho() {
-    let platilloIzquierdoAlto = document.getElementById("SONIDOtamborDerecho")
-    if (SONIDOtamborDerecho.paused) {
-        SONIDOtamborDerecho.play();
+function tocarTamborDerecho() {
+    let tamborDerecho = document.getElementById("sonidoTamborDerecho")
+    if (tamborDerecho.paused) {
+        tamborDerecho.play();
     } else {
-        SONIDOtamborDerecho.currentTime = 0;
+        tamborDerecho.currentTime = 0;
     }
 }
 
-function REPizquierdoSuperior() {
-    let platilloIzquierdoAlto = document.getElementById("SONIDOizquierdoSuperior")
-    if (SONIDOizquierdoSuperior.paused) {
-        SONIDOizquierdoSuperior.play();
+function tocarIzquierdoSuperior() {
+    let izquierdoSuperior = document.getElementById("sonidoIzquierdoSuperior")
+    if (izquierdoSuperior.paused) {
+        izquierdoSuperior.play();
     } else {
-        SONIDOizquierdoSuperior.currentTime = 0;
+        izquierdoSuperior.currentTime = 0;
     }
 }
 
-function REPderechoSuperior() {
-    let platilloIzquierdoAlto = document.getElementById("SONIDOderechoSuperior")
-    if (SONIDOderechoSuperior.paused) {
-        SONIDOderechoSuperior.play();
+function tocarDerechoSuperior() {
+    let derechoSuperior = document.getElementById("sonidoDerechoSuperior")
+    if (derechoSuperior.paused) {
+        derechoSuperior.play();
     } else {
-        SONIDOderechoSuperior.currentTime = 0;
+        derechoSuperior.currentTime = 0;
     }
 }
+
+
