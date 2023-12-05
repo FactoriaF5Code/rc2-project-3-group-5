@@ -80,3 +80,15 @@ section {
     rotate: -5deg;
 }
 
+#bombo {
+    background-color: coral;
+    width: 370px;
+    height: 330px;
+    border-radius: 50% ;
+    margin-top: -230px;
+    margin-left: 430px;
+    opacity: 0.5;
+    cursor: pointer;
+
+}
+
