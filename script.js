@@ -1,47 +1,71 @@
 function REPplatilloIzquierdoAlto() {
     let platilloIzquierdoAlto = document.getElementById("SONIDOplatilloIzquierdoAlto")
-
-    SONIDOplatilloIzquierdoAlto.play(); 
+    if (SONIDOplatilloIzquierdoAlto.paused) {
+        SONIDOplatilloIzquierdoAlto.play();
+    } else {
+        SONIDOplatilloIzquierdoAlto.currentTime = 0;
+    }
 }
 
 function REPplatilloIzquierdoBajo() {
     let platilloIzquierdoAlto = document.getElementById("SONIDOplatilloIzquierdoBajo")
-
-    SONIDOplatilloIzquierdoBajo.play(); 
+    if (SONIDOplatilloIzquierdoBajo.paused) {
+        SONIDOplatilloIzquierdoBajo.play();
+    } else {
+        SONIDOplatilloIzquierdoBajo.currentTime = 0;
+    }
 }
 
 function REPplatilloDerecho() {
     let platilloIzquierdoAlto = document.getElementById("SONIDOplatilloDerecho")
-
-    SONIDOplatilloDerecho.play(); 
+    if (SONIDOplatilloDerecho.paused) {
+        SONIDOplatilloDerecho.play();
+    } else {
+        SONIDOplatilloDerecho.currentTime = 0;
+    }
 }
 
 function REPtamborIzquierdo() {
     let platilloIzquierdoAlto = document.getElementById("SONIDOtamborIzquierdo")
-
-    SONIDOtamborIzquierdo.play(); 
+    if (SONIDOtamborIzquierdo.paused) {
+        SONIDOtamborIzquierdo.play();
+    } else {
+        SONIDOtamborIzquierdo.currentTime = 0;
+    }
 }
 
 function REPbombo() {
     let platilloIzquierdoAlto = document.getElementById("SONIDObombo")
-
-    SONIDObombo.play(); 
+    if (SONIDObombo.paused) {
+        SONIDObombo.play();
+    } else {
+        SONIDObombo.currentTime = 0;
+    }
 }
 
 function REPtamborDerecho() {
     let platilloIzquierdoAlto = document.getElementById("SONIDOtamborDerecho")
-
-    SONIDOtamborDerecho.play(); 
+    if (SONIDOtamborDerecho.paused) {
+        SONIDOtamborDerecho.play();
+    } else {
+        SONIDOtamborDerecho.currentTime = 0;
+    }
 }
 
 function REPizquierdoSuperior() {
     let platilloIzquierdoAlto = document.getElementById("SONIDOizquierdoSuperior")
-
-    SONIDOizquierdoSuperior.play(); 
+    if (SONIDOizquierdoSuperior.paused) {
+        SONIDOizquierdoSuperior.play();
+    } else {
+        SONIDOizquierdoSuperior.currentTime = 0;
+    }
 }
 
 function REPderechoSuperior() {
     let platilloIzquierdoAlto = document.getElementById("SONIDOderechoSuperior")
-
-    SONIDOderechoSuperior.play(); 
+    if (SONIDOderechoSuperior.paused) {
+        SONIDOderechoSuperior.play();
+    } else {
+        SONIDOderechoSuperior.currentTime = 0;
+    }
 }
