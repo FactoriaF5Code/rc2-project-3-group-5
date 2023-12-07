@@ -7,10 +7,18 @@ document.addEventListener("mousemove", (e) => {
     customCursor.style.top = e.pageY - 25 + "px";
 });
 
-
 function tocarPlatilloIzquierdoAlto() {
     let platilloIzquierdoAlto = document.getElementById("sonidoPlatilloIzquierdoAlto");
-    if (platilloIzquierdoAlto.paused) {
+    let sombra = document.getElementById("s"); 
+    
+    
+    sombra.style.boxShadow = "0px 0px 7px 8px rgba(252, 245, 245, 0.5)";
+    
+    setTimeout(function() {
+        sombra.style.boxShadow = "none"; 
+    }, 200); 
+    
+    if (platilloIzquierdoAlto.paused) { 
         platilloIzquierdoAlto.play();
     } else {
         platilloIzquierdoAlto.currentTime = 0;
@@ -18,10 +26,12 @@ function tocarPlatilloIzquierdoAlto() {
 }
 
 document.addEventListener("keydown", function(event) {
-    if (event.key === "s") { 
-        tocarPlatilloIzquierdoAlto(); 
+    if (event.key === "s") {
+        tocarPlatilloIzquierdoAlto();
     }
 });
+
+
 
 function tocarPlatilloIzquierdoBajo() {
     let platilloIzquierdoBajo = document.getElementById("sonidoPlatilloIzquierdoBajo")
@@ -32,9 +42,9 @@ function tocarPlatilloIzquierdoBajo() {
     }
 }
 
-document.addEventListener("keydown", function(event) {
-    if (event.key === "d") { 
-        tocarPlatilloIzquierdoBajo(); 
+document.addEventListener("keydown", function (event) {
+    if (event.key === "d") {
+        tocarPlatilloIzquierdoBajo();
     }
 });
 
@@ -47,9 +57,9 @@ function tocarPlatilloDerecho() {
     }
 }
 
-document.addEventListener("keydown", function(event) {
-    if (event.key === "l") { 
-        tocarPlatilloDerecho(); 
+document.addEventListener("keydown", function (event) {
+    if (event.key === "l") {
+        tocarPlatilloDerecho();
     }
 });
 
@@ -62,9 +72,9 @@ function tocarTamborIzquierdo() {
     }
 }
 
-document.addEventListener("keydown", function(event) {
-    if (event.key === "f") { 
-        tocarTamborIzquierdo(); 
+document.addEventListener("keydown", function (event) {
+    if (event.key === "f") {
+        tocarTamborIzquierdo();
     }
 });
 
@@ -77,9 +87,9 @@ function tocarBombo() {
     }
 }
 
-document.addEventListener("keydown", function(event) {
-    if (event.key === "h") { 
-        tocarBombo(); 
+document.addEventListener("keydown", function (event) {
+    if (event.key === "h") {
+        tocarBombo();
     }
 });
 
@@ -92,9 +102,9 @@ function tocarTamborDerecho() {
     }
 }
 
-document.addEventListener("keydown", function(event) {
-    if (event.key === "k") { 
-        tocarTamborDerecho(); 
+document.addEventListener("keydown", function (event) {
+    if (event.key === "k") {
+        tocarTamborDerecho();
     }
 });
 
@@ -107,9 +117,9 @@ function tocarIzquierdoSuperior() {
     }
 }
 
-document.addEventListener("keydown", function(event) {
-    if (event.key === "g") { 
-        tocarIzquierdoSuperior(); 
+document.addEventListener("keydown", function (event) {
+    if (event.key === "g") {
+        tocarIzquierdoSuperior();
     }
 });
 
@@ -122,9 +132,9 @@ function tocarDerechoSuperior() {
     }
 }
 
-document.addEventListener("keydown", function(event) {
-    if (event.key === "j") { 
-        tocarDerechoSuperior(); 
+document.addEventListener("keydown", function (event) {
+    if (event.key === "j") {
+        tocarDerechoSuperior();
     }
 });
 
