@@ -16,29 +16,68 @@
 </head>
 
 <body>
-    <h1>Tu golpe online</h1>
-    <h2>Prueba a pulsar en cada parte de la batería o utiliza tu teclado!</h2>
-    <section>
-        <div id="cursorLayer"></div>
-        <div id="platilloIzquierdoAlto" onclick="tocarPlatilloIzquierdoAlto()"></div>
-        <div id="platilloIzquierdoBajo" onclick="tocarPlatilloIzquierdoBajo()"></div>
-        <div id="platilloDerecho" onclick="tocarPlatilloDerecho()"></div>
-        <div id="tamborIzquierdo" onclick="tocarTamborIzquierdo()"></div>
-        <div id="bombo" onclick="tocarBombo()"></div>
-        <div id="tamborDerecho" onclick="tocarTamborDerecho()"></div>
-        <div id="izquierdoSuperior" onclick="tocarIzquierdoSuperior()"></div>
-        <div id="derechoSuperior" onclick="tocarDerechoSuperior()"></div>
+    <header>
+        <h1>Tu golpe online</h1>
+        <h2>Prueba a pulsar en cada parte de la batería o utiliza tu teclado!</h2>
+    </header>
+    <main>
+        <section id="bateria">
+            <div id="cursorLayer"></div>
+            <div id="platilloIzquierdoAlto" onclick="tocarPlatilloIzquierdoAlto()"></div>
+            <div id="platilloIzquierdoBajo" onclick="tocarPlatilloIzquierdoBajo()"></div>
+            <div id="platilloDerecho" onclick="tocarPlatilloDerecho()"></div>
+            <div id="tamborIzquierdo" onclick="tocarTamborIzquierdo()"></div>
+            <div id="bombo" onclick="tocarBombo()"></div>
+            <div id="tamborDerecho" onclick="tocarTamborDerecho()"></div>
+            <div id="izquierdoSuperior" onclick="tocarIzquierdoSuperior()"></div>
+            <div id="derechoSuperior" onclick="tocarDerechoSuperior()"></div>
 
-        <audio id="sonidoPlatilloIzquierdoAlto" src="./sonidos/platillo_1.mp3" type="mp3"></audio>
-        <audio id="sonidoPlatilloIzquierdoBajo" src="./sonidos/platillo_2.mp3" type="mp3"></audio>
-        <audio id="sonidoPlatilloDerecho" src="./sonidos/platillo_4.mp3" type="mp3"></audio>
-        <audio id="sonidoTamborIzquierdo" src="./sonidos/bombo_2.mp3" type="mp3"></audio>
-        <audio id="sonidoBombo" src="./sonidos/bombo_1.mp3" type="mp3"></audio>
-        <audio id="sonidoTamborDerecho" src="./sonidos/bombo_2.mp3" type="mp3"></audio>
-        <audio id="sonidoIzquierdoSuperior" src="./sonidos/bombo_4.mp3" type="mp3"></audio>
-        <audio id="sonidoDerechoSuperior" src="./sonidos/bombo_5.mp3" type="mp3"></audio>
-    </section>
+            <audio id="sonidoPlatilloIzquierdoAlto" src="./sonidos/platillo_1.mp3" type="mp3"></audio>
+            <audio id="sonidoPlatilloIzquierdoBajo" src="./sonidos/platillo_2.mp3" type="mp3"></audio>
+            <audio id="sonidoPlatilloDerecho" src="./sonidos/platillo_4.mp3" type="mp3"></audio>
+            <audio id="sonidoTamborIzquierdo" src="./sonidos/bombo_2.mp3" type="mp3"></audio>
+            <audio id="sonidoBombo" src="./sonidos/bombo_1.mp3" type="mp3"></audio>
+            <audio id="sonidoTamborDerecho" src="./sonidos/bombo_2.mp3" type="mp3"></audio>
+            <audio id="sonidoIzquierdoSuperior" src="./sonidos/bombo_4.mp3" type="mp3"></audio>
+            <audio id="sonidoDerechoSuperior" src="./sonidos/bombo_5.mp3" type="mp3"></audio>
+        </section>
 
+        <section id="leyenda">
+            <h3 class="tituloTeclas"> Teclas </h3>
+            <article>
+                <div class="tecla">S</div>
+                <p>Platillo izquierdo</p>
+            </article>
+            <article>
+                <div class="tecla">D</div>
+                <p>Platillo doble</p>
+            </article>
+            <article>
+                <div class="tecla">F</div>
+                <p>Tambor izquierdo</p>
+            </article>
+            <article>
+                <div class="tecla">G</div>
+                <p>Timbal izquierdo</p>
+            </article>
+            <article>
+                <div class="tecla">H</div>
+                <p>Bombo</p>
+            </article>
+            <article>
+                <div class="tecla">J</div>
+                <p>Timbal derecho</p>
+            </article>
+            <article>
+                <div class="tecla">K</div>
+                <p>Tambor derecho</p>
+            </article>
+            <article>
+                <div class="tecla">L</div>
+                <p>Platillo derecho</p>
+            </article>
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>

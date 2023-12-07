@@ -4,6 +4,9 @@ body {
     width: 100vw;
     height: 100vh;
     background: linear-gradient(to bottom, #070708, #070708, #363945, #363945);
+}
+
+header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,7 +26,12 @@ h2 {
     color: white;
 }
 
-section {
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+#bateria {
     background-image: url(./bateria.png);
     height: 65.19vh;
     width: 58.98vw;
@@ -59,7 +67,7 @@ section {
     border-radius: 50%;
     margin-top: 30px;
     margin-left: -30px;
-    opacity: 0;
+    opacity: 0.5;
     rotate: -7deg;
 }
 
@@ -70,7 +78,7 @@ section {
     border-radius: 50%;
     margin-top: 160px;
     margin-left: 70px;
-    opacity: 0;
+    opacity: 0.5;
     rotate: -5deg;
 }
 
@@ -81,7 +89,7 @@ section {
     border-radius: 50%;
     margin-top: -230px;
     margin-left: 430px;
-    opacity: 0;
+    opacity: 0.5;
 
 }
 
@@ -93,7 +101,7 @@ section {
     margin-top: -350px;
     margin-left: 810px;
     rotate: 6deg;
-    opacity: 0;
+    opacity: 0.5;
 }
 
 #izquierdoSuperior {
@@ -103,7 +111,7 @@ section {
     border-radius: 50%;
     margin-top: -570px;
     margin-left: 350px;
-    opacity: 0;
+    opacity: 0.5;
  }
  
 #derechoSuperior {
@@ -113,7 +121,7 @@ background-color: chocolate;
 border-radius: 50%;
 margin-top: -190px; 
 margin-left: 650px;
-opacity: 0;
+opacity: 0.5;
 }
 
 /* ... (Otros estilos) ... */
