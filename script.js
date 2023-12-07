@@ -17,6 +17,12 @@ function tocarPlatilloIzquierdoAlto() {
     }
 }
 
+document.addEventListener("keydown", function(event) {
+    if (event.key === "s") { 
+        tocarPlatilloIzquierdoAlto(); 
+    }
+});
+
 function tocarPlatilloIzquierdoBajo() {
     let platilloIzquierdoBajo = document.getElementById("sonidoPlatilloIzquierdoBajo")
     if (platilloIzquierdoBajo.paused) {
@@ -25,6 +31,12 @@ function tocarPlatilloIzquierdoBajo() {
         platilloIzquierdoBajo.currentTime = 0;
     }
 }
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "d") { 
+        tocarPlatilloIzquierdoBajo(); 
+    }
+});
 
 function tocarPlatilloDerecho() {
     let platilloDerecho = document.getElementById("sonidoPlatilloDerecho")
@@ -35,6 +47,12 @@ function tocarPlatilloDerecho() {
     }
 }
 
+document.addEventListener("keydown", function(event) {
+    if (event.key === "l") { 
+        tocarPlatilloDerecho(); 
+    }
+});
+
 function tocarTamborIzquierdo() {
     let tamborIzquierdo = document.getElementById("sonidoTamborIzquierdo")
     if (tamborIzquierdo.paused) {
@@ -43,6 +61,12 @@ function tocarTamborIzquierdo() {
         tamborIzquierdo.currentTime = 0;
     }
 }
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "f") { 
+        tocarTamborIzquierdo(); 
+    }
+});
 
 function tocarBombo() {
     let bombo = document.getElementById("sonidoBombo")
@@ -53,6 +77,12 @@ function tocarBombo() {
     }
 }
 
+document.addEventListener("keydown", function(event) {
+    if (event.key === "h") { 
+        tocarBombo(); 
+    }
+});
+
 function tocarTamborDerecho() {
     let tamborDerecho = document.getElementById("sonidoTamborDerecho")
     if (tamborDerecho.paused) {
@@ -61,6 +91,12 @@ function tocarTamborDerecho() {
         tamborDerecho.currentTime = 0;
     }
 }
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "k") { 
+        tocarTamborDerecho(); 
+    }
+});
 
 function tocarIzquierdoSuperior() {
     let izquierdoSuperior = document.getElementById("sonidoIzquierdoSuperior")
@@ -71,6 +107,12 @@ function tocarIzquierdoSuperior() {
     }
 }
 
+document.addEventListener("keydown", function(event) {
+    if (event.key === "g") { 
+        tocarIzquierdoSuperior(); 
+    }
+});
+
 function tocarDerechoSuperior() {
     let derechoSuperior = document.getElementById("sonidoDerechoSuperior")
     if (derechoSuperior.paused) {
@@ -79,5 +121,11 @@ function tocarDerechoSuperior() {
         derechoSuperior.currentTime = 0;
     }
 }
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "j") { 
+        tocarDerechoSuperior(); 
+    }
+});
 
 
