@@ -1,3 +1,8 @@
+*{
+    /* outline: solid 0.5px red; */
+    
+}
+
 body {
     cursor: none;
     overflow: hidden;
@@ -23,21 +28,75 @@ h1 {
 }
 
 h2 {
-
     font-size: 3.84vh;
     font-family: Bellota;
     color: white;
 }
 
+main {
+    display: flex;
+    align-items: center;
+}
+
 #leyenda {
+    height: 65.19vh;
     position: absolute;
-    right: 10px; /* Alinea a la derecha con un margen de 10px desde el borde derecho */
-    top: 0; /* Alinea en la parte superior */
+    right: 4vw;
     display: flex;
     flex-direction: column;
-    background-color: aliceblue;
-    padding: 10px;
+    justify-content: space-between;
 }
+
+.tituloTeclas {
+    background-color: #D1D0CF;
+    width: 245px;
+    height: 65px;
+    border-radius: 10px;
+    font-size: 48px;
+    font-family: Bellota;
+    color: #363945;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.contenedorTeclas {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+article {
+    height: 55px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.tecla {
+    width: 55px;
+    height: 55px;
+    background-color: #D1D0CF;
+    border-radius: 10px;
+    font-family: Bellota;
+    font-size: 48px;
+    color: #363945;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    box-shadow: 0px 0px 7px 8px rgba(252, 245, 245, 0.5);
+}
+
+p {
+    font-family: Bellota;
+    font-size: 22px;
+    color: white;
+    margin-left: 10px;
+}
+
 
 #bateria {
     background-image: url(./bateria.png);
