@@ -7,6 +7,18 @@ document.addEventListener("mousemove", (e) => {
   customCursor.style.top = e.pageY - 25 + "px";
 });
 
+
+function abrirMenu() {
+  let contenedorInstrumentos = document.getElementById("menuHamburguesa");
+
+  if (contenedorInstrumentos.style.opacity == "0") {
+    contenedorInstrumentos.style.opacity = "0.9";
+  } else {
+    contenedorInstrumentos.style.opacity = "0";
+  }
+}
+
+
 function tocarPlatilloIzquierdoAlto() {
   let platilloIzquierdoAlto = document.getElementById(
     "sonidoPlatilloIzquierdoAlto"
@@ -196,5 +208,11 @@ document.addEventListener("keydown", function (event) {
     tocarDerechoSuperior();
   }
 });
+
+
+
+
+
+
 
 /* HOLA */
