@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./guitarra.css">
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@300&display=swap" rel="stylesheet">
+    <title>Guitarra</title>
+</head>
+
+<body>
+    <div class="iconoMenu" onclick="abrirMenu()">
+        <img src="../openMenu.png" alt="imagen de menu hamburguesa" id="iconoMenu" >
+    </div>
+
+    <div class="contenedorMenu" id="menuHamburguesa">
+        <ul>
+            <li><a href="./index.html"> Bateria </a></li>
+            <li><a href="./guitarra.html"> Guitarra </a></li>
+            <li><a href="./index.html"> Piano </a></li>
+        </ul>
+
+    </div>
+    <header>
+        <h1>Tu golpe online</h1>
+        <h2>Toca las cuerdas de la guitarra para escuchar las notas!</h2>
+    </header>
+    <main>
+        <section id="guitarra">
+            <div id="cursorLayer"></div>
+            <div id="cuerda1" onclick="tocarCuerda1()"></div>
+            <div id="cuerda2" onclick="tocarCuerda2()"></div>
+            <div id="cuerda3" onclick="tocarCuerda3()"></div>
+            <div id="cuerda4" onclick="tocarCuerda4()"></div>
+            <div id="cuerda5" onclick="tocarCuerda5()"></div>
+            <div id="cuerda6" onclick="tocarCuerda6()"></div>
+            
+
+            <audio id="sonidoCuerda1" src="./sonidos/platillo_1.mp3" type="mp3"></audio>
+            <audio id="sonidoCuerda2" src="./sonidos/platillo_2.mp3" type="mp3"></audio>
+            <audio id="sonidoCuerda3" src="./sonidos/platillo_4.mp3" type="mp3"></audio>
+            <audio id="sonidoCuerda4" src="./sonidos/bombo_2.mp3" type="mp3"></audio>
+            <audio id="sonidoCuerda5" src="./sonidos/bombo_1.mp3" type="mp3"></audio>
+            <audio id="sonidoCuerda6" src="./sonidos/bombo_2.mp3" type="mp3"></audio>
+          
+        </section>
+
+        <section id="leyenda">
+            <h3 class="tituloTeclas"> Teclas </h3>
+            <div class="contenedorTeclas">
+                <article>
+                    <div class="tecla" id="s">S</div>
+                    <p>Cuerda1</p>
+                </article>
+                <article>
+                    <div class="tecla" id="d">D</div>
+                    <p>Cuerda2</p>
+                </article>
+                <article>
+                    <div class="tecla" id="f">F</div>
+                    <p>cuerda3</p>
+                </article>
+                <article>
+                    <div class="tecla" id="g">G</div>
+                    <p>cuerda4</p>
+                </article>
+                <article>
+                    <div class="tecla" id="h">H</div>
+                    <p>cuerda5</p>
+                </article>
+                <article>
+                    <div class="tecla" id="j">J</div>
+                    <p>cuerda6</p>
+                </article>
+                
+            </div>
+        </section>
+    </main>
+
+    <script src="guitarra.js"></script>
+</body>
+
+</html>
