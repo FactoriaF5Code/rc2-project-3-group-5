@@ -194,7 +194,7 @@ p {
     /* Ancho de la imagen de cursor personalizado */
     height: 202px;
     /* Alto de la imagen de cursor personalizado */
-    background: url('./baqueta.png') no-repeat;
+    background: url('../pua-de-guitarra.png') no-repeat;
     /* URL de la imagen personalizada */
     background-size: cover;
     rotate: 45deg;
