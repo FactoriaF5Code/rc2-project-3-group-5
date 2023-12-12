@@ -18,5 +18,12 @@ function abrirMenu() {
   }
 };
 
+function tocarCuerda(cuerda) {
+  const sonido = document.getElementById(`sonidoCuerda${cuerda}`);
+  sonido.currentTime = 0; // Reiniciar la reproducción si ya se estaba reproduciendo
+  sonido.play();
+}
+
+
 
 

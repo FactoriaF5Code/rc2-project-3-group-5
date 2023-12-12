@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div class="iconoMenu" onmouseenter="abrirMenu()">
+    <div class="iconoMenu" onclick="abrirMenu()">
         <img src="../openMenu.png" alt="imagen de menu hamburguesa" id="iconoMenu">
     </div>
 
@@ -35,12 +35,12 @@
     <main>
         <section id="guitarra">
             <div id="cursorLayer"></div>
-            <div id="cuerda1" onmouseenter="tocarCuerda1()"></div>
-            <div id="cuerda2" onmouseenter="tocarCuerda2()"></div>
-            <div id="cuerda3" onmouseenter="tocarCuerda3()"></div>
-            <div id="cuerda4" onmouseenter="tocarCuerda4()"></div>
-            <div id="cuerda5" onmouseenter="tocarCuerda5()"></div>
-            <div id="cuerda6" onmouseenter="tocarCuerda6()"></div>
+            <div id="cuerda1" onmouseenter="tocarCuerda(1)"></div>
+            <div id="cuerda2" onmouseenter="tocarCuerda(2)"></div>
+            <div id="cuerda3" onmouseenter="tocarCuerda(3)"></div>
+            <div id="cuerda4" onmouseenter="tocarCuerda(4)"></div>
+            <div id="cuerda5" onmouseenter="tocarCuerda(5)"></div>
+            <div id="cuerda6" onmouseenter="tocarCuerda(6)"></div>
 
 
             <audio id="sonidoCuerda1" src="/sonidos/guitarra_1.mp3" type="mp3"></audio>
