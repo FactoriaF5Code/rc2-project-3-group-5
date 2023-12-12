@@ -230,8 +230,8 @@ p {
 }
 
 .iconoMenu img{
-    vertical-align: top;
     width: 40px;
+    vertical-align: top;
     cursor: pointer;
 }
 
