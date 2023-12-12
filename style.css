@@ -209,9 +209,9 @@ p {
 
 #customCursor {
     position: absolute;
-    width: 202px;
+    width: 150px;
     /* Ancho de la imagen de cursor personalizado */
-    height: 202px;
+    height: 150px;
     /* Alto de la imagen de cursor personalizado */
     background: url('./baqueta.png') no-repeat;
     /* URL de la imagen personalizada */

@@ -3,7 +3,7 @@
 }
 
 body {
-    cursor: none;
+    cursor:none;
     overflow: hidden;
     width: 100vw;
     height: 100vh;
@@ -110,69 +110,63 @@ p {
 
 #cuerda1 {
     background-color: rgb(30, 255, 0);
-    width: 27.0vw;
-    height: 27.42vh;
-    border-radius: 50%;
-    margin-top: -39.67vh;
-    margin-left: 44.33vw;
+    width: 54vw;
+    height: 1vh;
+    margin-top: 23vh;
+    margin-left: 5vw;
     opacity: 0.5;
+    rotate: 0.3deg;
 }
 
 #cuerda2 {
     background-color: aqua;
-    width: 19.93vw;
-    height: 19.56vh;
-    border-radius: 50%;
-    margin-top: 2.44vh;
-    margin-left: -3.41vw;
+    width: 54vw;
+    height: 1vh;
+    margin-top: 3vh ;
+    margin-left: 5vw;
     opacity: 0.5;
+    rotate: 0.3deg;
 }
 
 #cuerda3 {
     background-color: rgb(238, 0, 255);
-    width: 17.22916vw;
-    height: 15.66667vh;
-    border-radius: 50%;
+    width: 54vw;
+    height: 1vh;  
     margin-top: 2.77778vh;
-    margin-left: -1.5625vw;
+    margin-left: 5vw;
     opacity: 0.5;
-    transform: rotate(-7deg);
 }
 
 #cuerda4 {
     background-color: blue;
-    width: 16.46875vw;
-    height: 19.29630vh;
-    border-radius: 50%;
-    margin-top: 14.81481vh;
-    margin-left: 3.64583vw;
+    width: 54vw;
+    height: 1vh;
+    margin-top: 3vh;
+    margin-left: 5vw;
     opacity: 0.5;
-    transform: rotate(-5deg);
+    
 
 }
 
 #cuerda5 {
     background-color: coral;
-    width: 17.27083vw;
-    height: 29.55556vh;
-    border-radius: 50%;
-    margin-top: -21.29630vh;
-    margin-left: 21.39583vw;
-
+    width: 54vw;
+    height: 1vh;
+    margin-top: 3vh;
+    margin-left: 5vw;
     opacity: 0.5;
+    rotate:-0.5deg;
 
 }
 
 #cuerda6 {
     background-color: rgb(217, 217, 17);
-    width: 20.05417vw;
-    height: 20.11111vh;
-    border-radius: 50%;
-    margin-top: -31.40741vh;
-    margin-left: 39.1875vw;
-    transform: rotate(6deg);
+    width: 54vw;
+    height: 1vh;
+    margin-top: 3vh;
+    margin-left: 5vw;
     opacity: 0.5;
-
+    rotate :-0.5deg;
 }
 
 /* ... (Otros estilos) ... */
@@ -190,9 +184,9 @@ p {
 
 #customCursor {
     position: absolute;
-    width: 202px;
+    width: 150px;
     /* Ancho de la imagen de cursor personalizado */
-    height: 202px;
+    height: 150px;
     /* Alto de la imagen de cursor personalizado */
     background: url('../pua-de-guitarra.png') no-repeat;
     /* URL de la imagen personalizada */
