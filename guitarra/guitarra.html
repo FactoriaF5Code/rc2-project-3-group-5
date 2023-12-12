@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./guitarra.css">
-    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="icon" type="image/png" href="../favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -16,8 +16,8 @@
 </head>
 
 <body>
-    <div class="iconoMenu" onclick="abrirMenu()">
-        <img src="../openMenu.png" alt="imagen de menu hamburguesa" id="iconoMenu" >
+    <div class="iconoMenu" onmouseenter="abrirMenu()">
+        <img src="../openMenu.png" alt="imagen de menu hamburguesa" id="iconoMenu">
     </div>
 
     <div class="contenedorMenu" id="menuHamburguesa">
@@ -35,13 +35,13 @@
     <main>
         <section id="guitarra">
             <div id="cursorLayer"></div>
-            <div id="cuerda1" onclick="tocarCuerda1()"></div>
-            <div id="cuerda2" onclick="tocarCuerda2()"></div>
-            <div id="cuerda3" onclick="tocarCuerda3()"></div>
-            <div id="cuerda4" onclick="tocarCuerda4()"></div>
-            <div id="cuerda5" onclick="tocarCuerda5()"></div>
-            <div id="cuerda6" onclick="tocarCuerda6()"></div>
-            
+            <div id="cuerda1" onmouseenter="tocarCuerda1()"></div>
+            <div id="cuerda2" onmouseenter="tocarCuerda2()"></div>
+            <div id="cuerda3" onmouseenter="tocarCuerda3()"></div>
+            <div id="cuerda4" onmouseenter="tocarCuerda4()"></div>
+            <div id="cuerda5" onmouseenter="tocarCuerda5()"></div>
+            <div id="cuerda6" onmouseenter="tocarCuerda6()"></div>
+
 
             <audio id="sonidoCuerda1" src="/sonidos/guitarra_1.mp3" type="mp3"></audio>
             <audio id="sonidoCuerda2" src="/sonidos/guitarra_2.mp3" type="mp3"></audio>
@@ -49,7 +49,7 @@
             <audio id="sonidoCuerda4" src="/sonidos/guitarra_4.mp3" type="mp3"></audio>
             <audio id="sonidoCuerda5" src="/sonidos/guitarra_5.mp3" type="mp3"></audio>
             <audio id="sonidoCuerda6" src="/sonidos/guitarra_6.mp3" type="mp3"></audio>
-          
+
         </section>
 
         <section id="leyenda">
@@ -79,7 +79,7 @@
                     <div class="tecla" id="j">J</div>
                     <p>cuerda6</p>
                 </article>
-                
+
             </div>
         </section>
     </main>
