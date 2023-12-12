@@ -111,39 +111,39 @@ p {
 #cuerda1 {
     background-color: rgb(30, 255, 0);
     width: 54vw;
-    height: 1vh;
-    margin-top: 23vh;
+    height: 0.5vh;
+    margin-top: 24.8vh;
     margin-left: 5vw;
-    opacity: 0.5;
+    opacity: 0.1;
     rotate: 0.3deg;
 }
 
 #cuerda2 {
     background-color: aqua;
     width: 54vw;
-    height: 1vh;
-    margin-top: 3vh ;
+    height: 0.5vh;
+    margin-top: 2.6vh;
     margin-left: 5vw;
-    opacity: 0.5;
+    opacity: 0.1;
     rotate: 0.3deg;
 }
 
 #cuerda3 {
     background-color: rgb(238, 0, 255);
     width: 54vw;
-    height: 1vh;  
-    margin-top: 2.77778vh;
+    height: 0.5vh;  
+    margin-top: 2.7vh;
     margin-left: 5vw;
-    opacity: 0.5;
+    opacity: 0.1;
 }
 
 #cuerda4 {
     background-color: blue;
     width: 54vw;
-    height: 1vh;
-    margin-top: 3vh;
+    height: 0.5vh;
+    margin-top: 2.95vh;
     margin-left: 5vw;
-    opacity: 0.5;
+    opacity: 0.1;
     
 
 }
@@ -151,10 +151,10 @@ p {
 #cuerda5 {
     background-color: coral;
     width: 54vw;
-    height: 1vh;
-    margin-top: 3vh;
+    height: 0.5vh;
+    margin-top: 2.8vh;
     margin-left: 5vw;
-    opacity: 0.5;
+    opacity: 0.1;
     rotate:-0.5deg;
 
 }
@@ -162,10 +162,10 @@ p {
 #cuerda6 {
     background-color: rgb(217, 217, 17);
     width: 54vw;
-    height: 1vh;
-    margin-top: 3vh;
+    height: 0.5vh;
+    margin-top: 2.8vh;
     margin-left: 5vw;
-    opacity: 0.5;
+    opacity: 0.1;
     rotate :-0.5deg;
 }
 
