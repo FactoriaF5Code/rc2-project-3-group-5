@@ -39,8 +39,6 @@ function tocarPlatilloIzquierdoAlto() {
   
 }
 
-console.log("Reproducción de platillo izquierdo alto finalizada.");
-
 document.addEventListener("keydown", function (event) {
   if (event.key === "s") {
     tocarPlatilloIzquierdoAlto();
