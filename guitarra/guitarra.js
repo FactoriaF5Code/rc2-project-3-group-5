@@ -7,7 +7,6 @@ document.addEventListener("mousemove", (e) => {
   customCursor.style.top = e.pageY - 25 + "px";
 });
 
-/*Hola hola*/
 
 function abrirMenu() {
   let contenedorInstrumentos = document.getElementById("menuHamburguesa");
