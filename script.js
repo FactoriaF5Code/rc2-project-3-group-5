@@ -36,7 +36,10 @@ function tocarPlatilloIzquierdoAlto() {
   } else {
     platilloIzquierdoAlto.currentTime = 0;
   }
+  
 }
+
+console.log("Reproducción de platillo izquierdo alto finalizada.");
 
 document.addEventListener("keydown", function (event) {
   if (event.key === "s") {
@@ -209,10 +212,3 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
-
-
-
-
-
-
-/* HOLA */
