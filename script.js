@@ -3,8 +3,8 @@ customCursor.id = "customCursor";
 document.body.appendChild(customCursor);
 
 document.addEventListener("mousemove", (e) => {
-  customCursor.style.left = e.pageX - 25 + "px";
-  customCursor.style.top = e.pageY - 25 + "px";
+  customCursor.style.left = e.pageX - 18 + "px";
+  customCursor.style.top = e.pageY - 18 + "px";
 });
 
 
@@ -36,6 +36,7 @@ function tocarPlatilloIzquierdoAlto() {
   } else {
     platilloIzquierdoAlto.currentTime = 0;
   }
+  
 }
 
 document.addEventListener("keydown", function (event) {
@@ -209,10 +210,3 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
-
-
-
-
-
-
-/* HOLA */
