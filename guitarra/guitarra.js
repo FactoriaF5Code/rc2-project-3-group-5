@@ -18,6 +18,20 @@ function abrirMenu() {
   }
 };
 
+
+let interruptor = document.querySelector(".btn");
+let cuerpo = document.querySelector("body");
+let sonido = document.getElementById("audio");
+
+let interruptorPulsado = false;
+
+interruptor.onclick = function encender(){
+    cuerpo.classList.toggle("on");
+    sonido.play();
+    interruptorPulsado = !interruptorPulsado;
+    console.log(interruptorPulsado)
+};
+
 function tocarCuerda(cuerda) {
   const sonido = document.getElementById(`sonidoCuerda${cuerda}`);
   sonido.currentTime = 0; 
