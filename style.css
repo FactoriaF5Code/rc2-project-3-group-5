@@ -125,7 +125,7 @@ p {
     border-radius: 50%;
     margin-top: -39.67vh;
     margin-left: 44.33vw;
-    opacity: 0.5;
+    opacity: 0;
 }
 
 #platilloIzquierdoAlto {
@@ -135,7 +135,7 @@ p {
     border-radius: 50%;
     margin-top: 2.44vh;
     margin-left: -3.41vw;
-    opacity: 0.5;
+    opacity: 0;
 }
 
 #platilloIzquierdoBajo {
@@ -145,7 +145,7 @@ p {
     border-radius: 50%;
     margin-top: 2.77778vh;
     margin-left: -1.5625vw;
-    opacity: 0.5;
+    opacity: 0;
     transform: rotate(-7deg);
 }
 
@@ -156,7 +156,7 @@ p {
     border-radius: 50%;
     margin-top: 14.81481vh;
     margin-left: 3.64583vw;
-    opacity: 0.5;
+    opacity: 0;
     transform: rotate(-5deg);
 
 }
@@ -168,7 +168,7 @@ p {
     border-radius: 50%;
     margin-top: -21.29630vh;
     margin-left: 21.39583vw;
-    opacity: 0.5;
+    opacity: 0;
 
 }
 
@@ -180,7 +180,7 @@ p {
     margin-top: -31.40741vh;
     margin-left: 39.1875vw;
     transform: rotate(6deg);
-    opacity: 0.5;
+    opacity: 0;
 
 }
 
@@ -191,7 +191,7 @@ p {
     border-radius: 50%;
     margin-top: -45.77778vh;
     margin-left: 17.22917vw;
-    opacity: 0.5;
+    opacity: 0;
 
 }
 
@@ -202,7 +202,7 @@ p {
     border-radius: 50%;
     margin-top: -16.59259vh;
     margin-left: 31.85417vw;
-    opacity: 0.5;
+    opacity: 0;
 
 }
 
