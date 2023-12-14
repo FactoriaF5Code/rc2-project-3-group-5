@@ -28,17 +28,6 @@ interruptor.onclick = function encender() {
     cuerpo.classList.toggle("on");
     interruptorPulsado = !interruptorPulsado;
     console.log(interruptorPulsado);
-
-    if (interruptorPulsado) {
-        // Las cuerdas se tocarán al pasar el ratón sobre ellas (onmouseenter)
-    } else {
-        // Detener la reproducción de las cuerdas si el interruptor está en false
-        for (let cuerda = 1; cuerda <= 6; cuerda++) {
-            const sonidoCuerda = document.getElementById(`sonidoCuerda${cuerda}`);
-            sonidoCuerda.pause();
-            sonidoCuerda.currentTime = 0;
-        }
-    }
 };
 
 function tocarCuerda(cuerda) {
@@ -46,7 +35,43 @@ function tocarCuerda(cuerda) {
         const sonidoCuerda = document.getElementById(`sonidoCuerda${cuerda}`);
         sonidoCuerda.currentTime = 0;
         sonidoCuerda.play();
+    } else {
+      const sonidoCuerdaElectrica = document.getElementById(`sonidoCuerda${cuerda + 6}`);
+      sonidoCuerdaElectrica.currentTime = 0;
+      sonidoCuerdaElectrica.play();
     }
 }
 
 
+/* Esta es la opción que propone Oli para la función del botón de la guitarra
+
+let interruptor = document.querySelector(".btn");
+let cuerpo = document.querySelector("body");
+let sonido = document.getElementById("audio");
+let interruptorPulsado = false;
+interruptor.onclick = function encender() {
+    cuerpo.classList.toggle("on");
+    interruptorPulsado = !interruptorPulsado;
+    console.log(interruptorPulsado);
+};
+function tocarCuerda(cuerda) {
+    const sonidoCuerda = document.getElementById(`sonidoCuerda${cuerda}`);
+    sonidoCuerda.currentTime = 0;
+    if (interruptorPulsado) {
+        // Si el interruptor está en true, tocar las cuerdas del 1 al 6
+        if (cuerda >= 1 && cuerda <= 6) {
+            sonidoCuerda.play();
+        }
+    } else {
+        // Si el interruptor está en false, tocar las cuerdas del 1 al 6 con sonidos del 7 al 12
+        if (cuerda >= 1 && cuerda <= 6) {
+            // Calculamos el número de la cuerda correspondiente del 7 al 12
+            const nuevaCuerda = cuerda + 6;
+            const sonidoNuevaCuerda = document.getElementById(`sonidoCuerda${nuevaCuerda}`);
+            sonidoNuevaCuerda.currentTime = 0;
+            sonidoNuevaCuerda.play();
+        }
+    }
+}
+
+*/
