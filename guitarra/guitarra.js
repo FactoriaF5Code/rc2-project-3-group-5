@@ -18,26 +18,35 @@ function abrirMenu() {
   }
 };
 
-
 let interruptor = document.querySelector(".btn");
 let cuerpo = document.querySelector("body");
 let sonido = document.getElementById("audio");
 
 let interruptorPulsado = false;
 
-interruptor.onclick = function encender(){
+interruptor.onclick = function encender() {
     cuerpo.classList.toggle("on");
-    sonido.play();
     interruptorPulsado = !interruptorPulsado;
-    console.log(interruptorPulsado)
+    console.log(interruptorPulsado);
+
+    if (interruptorPulsado) {
+        // Las cuerdas se tocarán al pasar el ratón sobre ellas (onmouseenter)
+    } else {
+        // Detener la reproducción de las cuerdas si el interruptor está en false
+        for (let cuerda = 1; cuerda <= 6; cuerda++) {
+            const sonidoCuerda = document.getElementById(`sonidoCuerda${cuerda}`);
+            sonidoCuerda.pause();
+            sonidoCuerda.currentTime = 0;
+        }
+    }
 };
 
 function tocarCuerda(cuerda) {
-  const sonido = document.getElementById(`sonidoCuerda${cuerda}`);
-  sonido.currentTime = 0; 
-  sonido.play();
+    if (interruptorPulsado) {
+        const sonidoCuerda = document.getElementById(`sonidoCuerda${cuerda}`);
+        sonidoCuerda.currentTime = 0;
+        sonidoCuerda.play();
+    }
 }
-
-
 
 

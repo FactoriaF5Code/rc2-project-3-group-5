@@ -40,6 +40,9 @@ h2 {
 main {
     display: flex;
     align-items: center;
+    height: 65.19vh;
+    width: 58.98vw;
+
 }
 
 #leyenda {
