@@ -29,7 +29,8 @@
     </div>
     <header>
         <h1>Guitarra</h1>
-        <h2>La guitarra es unos de los intrumentos de cuerda mas usados, dale click en la imagen y mueve nuestra pua como lo harias en una guitarra en el mundo real!</h2>
+        <h2>La guitarra es unos de los intrumentos de cuerda mas usados, mueve la púa como lo harías en una guitarra en
+            el mundo real y clica el interruptor para cambiar el tipo de guitarra.</h2>
     </header>
     <main>
         <section id="guitarra">
@@ -55,16 +56,19 @@
             <audio id="sonidoCuerda10" src="/sonidos/guitarra_10.mp3" type="mp3"></audio>
             <audio id="sonidoCuerda11" src="/sonidos/guitarra_11.mp3" type="mp3"></audio>
             <audio id="sonidoCuerda12" src="/sonidos/guitarra_12.mp3" type="mp3"></audio>
-            
+
         </section>
-        
+
         <div class="switch">
-            <div class="btn">
-                
-            </div>
+            <div class="btn"></div>
         </div>
-                <audio id="audio" src="../sonidos/click.mp3" autostart="false"></audio>
+        <div>
+            <h2 class="tipoGuitarra" id="acustica">Acústica</h2>
+            <h2 class="tipoGuitarra" id="electrica">Eléctrica</h2>
+        </div>
+        <audio id="audio" src="../sonidos/click.mp3" autostart="false"></audio>
     </main>
+
 
     <script src="/guitarra/guitarra.js"></script>
 </body>

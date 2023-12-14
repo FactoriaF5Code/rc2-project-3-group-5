@@ -22,12 +22,22 @@ let interruptor = document.querySelector(".btn");
 let cuerpo = document.querySelector("body");
 let sonido = document.getElementById("audio");
 
-let interruptorPulsado = false;
+let cambioElectrica = document.getElementById("electrica")
+let cambioAcustica = document.getElementById("acustica")
+
+let interruptorPulsado = true;
 
 interruptor.onclick = function encender() {
     cuerpo.classList.toggle("on");
     interruptorPulsado = !interruptorPulsado;
     console.log(interruptorPulsado);
+    if (cambioAcustica.style.display == "none") {
+      cambioAcustica.style.display = "block";
+      cambioElectrica.style.display = "none";
+    } else {
+      cambioAcustica.style.display = "none";
+      cambioElectrica.style.display = "block";
+    }
 };
 
 function tocarCuerda(cuerda) {
@@ -41,6 +51,7 @@ function tocarCuerda(cuerda) {
       sonidoCuerdaElectrica.play();
     }
 }
+
 
 
 /* Esta es la opción que propone Oli para la función del botón de la guitarra

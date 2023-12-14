@@ -3,7 +3,7 @@
 }
 
 body {
-    cursor:none;
+    cursor: none;
     overflow: hidden;
     width: 100vw;
     height: 100vh;
@@ -83,7 +83,7 @@ p {
 #cuerda3 {
     background-color: rgb(238, 0, 255);
     width: 54vw;
-    height: 0.5vh;  
+    height: 0.5vh;
     margin-top: 2.7vh;
     margin-left: 5vw;
     opacity: 0.1;
@@ -96,7 +96,7 @@ p {
     margin-top: 2.95vh;
     margin-left: 5vw;
     opacity: 0.1;
-    
+
 }
 
 #cuerda5 {
@@ -106,7 +106,7 @@ p {
     margin-top: 2.8vh;
     margin-left: 5vw;
     opacity: 0.1;
-    rotate:-0.5deg;
+    rotate: -0.5deg;
 
 }
 
@@ -117,7 +117,7 @@ p {
     margin-top: 2.8vh;
     margin-left: 5vw;
     opacity: 0.1;
-    rotate :-0.5deg;
+    rotate: -0.5deg;
 }
 
 /* ... (Otros estilos) ... */
@@ -152,18 +152,18 @@ p {
     padding: 5px;
     position: absolute;
     z-index: 2;
-    background-color: #D1D0CF;
 }
 
-.iconoMenu img{
+.iconoMenu img {
     vertical-align: top;
     width: 40px;
     cursor: pointer;
+    filter: invert(100%);
 }
 
-.contenedorMenu{
-    background-color: rgb(42,42,42);
-    box-shadow: 2px 0px 5px 2px rgb(66,66,66);
+.contenedorMenu {
+    background-color: rgb(42, 42, 42);
+    box-shadow: 2px 0px 5px 2px rgb(66, 66, 66);
     width: 300px;
     height: 100vh;
     position: absolute;
@@ -175,38 +175,38 @@ p {
 
 }
 
-.contenedorMenu ul{
+.contenedorMenu ul {
     padding: 100px 0px 20px 0px;
     list-style: none;
 }
 
-.contenedorMenu ul li{
-    color: rgb(228,228,228);
+.contenedorMenu ul li {
+    color: rgb(228, 228, 228);
     font-size: 25px;
     text-decoration: none;
     padding: 10px 50px;
-    
+
 }
 
-.contenedorMenu ul li:hover{
+.contenedorMenu ul li:hover {
     background-color: rgb(28, 28, 28);
 }
 
-.active{
+.active {
     transform: translate(-600px);
 }
 
-.opacity{
+.opacity {
     background-color: #070708;
     transition: all .5s ease;
 }
 
 
 a {
-    cursor: none;
+    cursor: pointer;
     text-decoration: none;
-    color: rgb(228,228,228);
-
+    color: rgb(228, 228, 228);
+    font-family: Bellota;
 }
 
 .wire {
@@ -260,4 +260,19 @@ a {
 
 #audio {
     display: none;
+}
+
+.tipoGuitarra  {
+    width: 10%;
+    position: absolute;
+    top: 88vh;
+    left: 85vw;
+}
+
+#electrica {
+    display: none;
+}
+
+#acustica {
+    display: block;
 }
