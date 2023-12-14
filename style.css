@@ -37,6 +37,15 @@ h2 {
     width: 65%;
 }
 
+h3 {
+    font-size: 2.84vh;
+    font-family: Bellota;
+    color: white;
+    text-align: center;
+    width: 65%;
+    display: none;
+}
+
 main {
     display: flex;
     align-items: center;
@@ -290,3 +299,39 @@ a {
     color: rgb(228,228,228);
 
 }
+
+.imagenParaMovil {
+    display: none;
+}
+
+#sonidoMovilTambor {
+    background-image: url(https://www.google.es/imgres?imgurl=https%3A%2F%2Fthumbs.static-thomann.de%2Fthumb%2F%2Fthumb1000x%2Fpics%2Fcms%2Fimage%2Fguide%2Fes%2Fonline_guide_cymbals%2Ftps_1335_198899_19305_198899.jpg&tbnid=fVUtT-zSs8AOCM&vet=12ahUKEwjcksGv2Y6DAxVOTqQEHf3jDPwQMygCegQIARB4..i&imgrefurl=https%3A%2F%2Fwww.thomann.de%2Fes%2Fonlineexpert_page_platillos_platillos_de_bateria.html&docid=3A4Q4QLi-ZI2nM&w=1000&h=656&q=platillo&ved=2ahUKEwjcksGv2Y6DAxVOTqQEHf3jDPwQMygCegQIARB4);
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    #leyenda {
+        display: none;
+    };
+
+    h2 {
+        display: none;
+    }
+
+    h3 {
+        display: block;
+    }
+
+    section {
+        display: none;
+    }
+
+
+
+
+
+}
+
+
+
