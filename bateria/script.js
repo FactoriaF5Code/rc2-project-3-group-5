@@ -36,7 +36,7 @@ function tocarPlatilloIzquierdoAlto() {
   } else {
     platilloIzquierdoAlto.currentTime = 0;
   }
-  
+
 }
 
 document.addEventListener("keydown", function (event) {

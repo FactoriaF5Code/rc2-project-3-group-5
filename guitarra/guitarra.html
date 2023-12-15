@@ -1,133 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/guitarra/guitarra.css" />
-    <link rel="icon" type="image/png" href="/img/favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bellota:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <title>Guitarra</title>
-  </head>
 
-  <body>
-    <div class="iconoMenu" onclick="abrirMenu()">
-      <img
-        src="/img/openMenu.png"
-        alt="imagen de menu hamburguesa"
-        id="iconoMenu"
-      />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/guitarra/guitarra.css" />
+  <link rel="icon" type="image/png" href="/img/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@300&display=swap" rel="stylesheet" />
+  <title>Guitarra</title>
+</head>
+
+<body>
+  <div class="iconoMenu" onclick="abrirMenu()">
+    <img src="/img/openMenu.png" alt="imagen de menu hamburguesa" id="iconoMenu" />
+  </div>
+
+  <div class="contenedorMenu" id="menuHamburguesa">
+    <ul>
+      <li><a href="/bateria/index.html">Instrumento Percusion</a></li>
+      <li><a href="/guitarra/guitarra.html">Instrumento Cuerda</a></li>
+    </ul>
+  </div>
+  <header>
+    <h1>Guitarra</h1>
+    <h2>
+      La guitarra es unos de los intrumentos de cuerda mas usados, mueve la
+      púa como lo harías en una guitarra en el mundo real y clica el
+      interruptor para cambiar el tipo de guitarra.
+    </h2>
+    <h3>Para tocar la guitarra pon tu móvil en horizontal</h3>
+  </header>
+  <div class="gifMovil"></div>
+  <main>
+    <section id="guitarra">
+      <div id="cursorLayer"></div>
+      <div id="cuerda1" onmouseenter="tocarCuerda(1)"></div>
+      <div id="cuerda2" onmouseenter="tocarCuerda(2)"></div>
+      <div id="cuerda3" onmouseenter="tocarCuerda(3)"></div>
+      <div id="cuerda4" onmouseenter="tocarCuerda(4)"></div>
+      <div id="cuerda5" onmouseenter="tocarCuerda(5)"></div>
+      <div id="cuerda6" onmouseenter="tocarCuerda(6)"></div>
+
+      <audio id="sonidoCuerda1" src="/sonidos/guitarra_1.mp3" type="mp3"></audio>
+      <audio id="sonidoCuerda2" src="/sonidos/guitarra_2.mp3" type="mp3"></audio>
+      <audio id="sonidoCuerda3" src="/sonidos/guitarra_3.mp3" type="mp3"></audio>
+      <audio id="sonidoCuerda4" src="/sonidos/guitarra_4.mp3" type="mp3"></audio>
+      <audio id="sonidoCuerda5" src="/sonidos/guitarra_5.mp3" type="mp3"></audio>
+      <audio id="sonidoCuerda6" src="/sonidos/guitarra_6.mp3" type="mp3"></audio>
+
+      <audio id="sonidoCuerda7" src="/sonidos/guitarra_7.mp3" type="mp3"></audio>
+      <audio id="sonidoCuerda8" src="/sonidos/guitarra_8.mp3" type="mp3"></audio>
+      <audio id="sonidoCuerda9" src="/sonidos/guitarra_9.mp3" type="mp3"></audio>
+      <audio id="sonidoCuerda10" src="/sonidos/guitarra_10.mp3" type="mp3"></audio>
+      <audio id="sonidoCuerda11" src="/sonidos/guitarra_11.mp3" type="mp3"></audio>
+      <audio id="sonidoCuerda12" src="/sonidos/guitarra_12.mp3" type="mp3"></audio>
+    </section>
+
+    <div class="switch">
+      <div class="btn"></div>
     </div>
-
-    <div class="contenedorMenu" id="menuHamburguesa">
-      <ul>
-        <li><a href="/bateria/index.html">Instrumento Percusion</a></li>
-        <li><a href="/guitarra/guitarra.html">Instrumento Cuerda</a></li>
-      </ul>
+    <div>
+      <h2 class="tipoGuitarra" id="acustica">Acústica</h2>
+      <h2 class="tipoGuitarra" id="electrica">Eléctrica</h2>
     </div>
-    <header>
-      <h1>Guitarra</h1>
-      <h2>
-        La guitarra es unos de los intrumentos de cuerda mas usados, mueve la
-        púa como lo harías en una guitarra en el mundo real y clica el
-        interruptor para cambiar el tipo de guitarra.
-      </h2>
-      <h3>Para tocar la guitarra pon tu móvil en horizontal</h3>
-    </header>
-    <div class="gifMovil"></div>
-    <main>
-      <section id="guitarra">
-        <div id="cursorLayer"></div>
-        <div id="cuerda1" onmouseenter="tocarCuerda(1)"></div>
-        <div id="cuerda2" onmouseenter="tocarCuerda(2)"></div>
-        <div id="cuerda3" onmouseenter="tocarCuerda(3)"></div>
-        <div id="cuerda4" onmouseenter="tocarCuerda(4)"></div>
-        <div id="cuerda5" onmouseenter="tocarCuerda(5)"></div>
-        <div id="cuerda6" onmouseenter="tocarCuerda(6)"></div>
+    <audio id="audio" src="/sonidos/click.mp3" autostart="false"></audio>
+  </main>
 
-        <audio
-          id="sonidoCuerda1"
-          src="/sonidos/guitarra_1.mp3"
-          type="mp3"
-        ></audio>
-        <audio
-          id="sonidoCuerda2"
-          src="/sonidos/guitarra_2.mp3"
-          type="mp3"
-        ></audio>
-        <audio
-          id="sonidoCuerda3"
-          src="/sonidos/guitarra_3.mp3"
-          type="mp3"
-        ></audio>
-        <audio
-          id="sonidoCuerda4"
-          src="/sonidos/guitarra_4.mp3"
-          type="mp3"
-        ></audio>
-        <audio
-          id="sonidoCuerda5"
-          src="/sonidos/guitarra_5.mp3"
-          type="mp3"
-        ></audio>
-        <audio
-          id="sonidoCuerda6"
-          src="/sonidos/guitarra_6.mp3"
-          type="mp3"
-        ></audio>
+  <script src="/guitarra/guitarra.js"></script>
+</body>
 
-        <audio
-          id="sonidoCuerda7"
-          src="/sonidos/guitarra_7.mp3"
-          type="mp3"
-        ></audio>
-        <audio
-          id="sonidoCuerda8"
-          src="/sonidos/guitarra_8.mp3"
-          type="mp3"
-        ></audio>
-        <audio
-          id="sonidoCuerda9"
-          src="/sonidos/guitarra_9.mp3"
-          type="mp3"
-        ></audio>
-        <audio
-          id="sonidoCuerda10"
-          src="/sonidos/guitarra_10.mp3"
-          type="mp3"
-        ></audio>
-        <audio
-          id="sonidoCuerda11"
-          src="/sonidos/guitarra_11.mp3"
-          type="mp3"
-        ></audio>
-        <audio
-          id="sonidoCuerda12"
-          src="/sonidos/guitarra_12.mp3"
-          type="mp3"
-        ></audio>
-      </section>
-
-      <div class="switch">
-        <div class="btn"></div>
-      </div>
-      <div>
-        <h2 class="tipoGuitarra" id="acustica">Acústica</h2>
-        <h2 class="tipoGuitarra" id="electrica">Eléctrica</h2>
-      </div>
-      <audio id="audio" src="/sonidos/click.mp3" autostart="false"></audio>
-    </main>
-
-    <script src="/guitarra/guitarra.js"></script>
-  </body>
 </html>

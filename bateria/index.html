@@ -1,145 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/bateria/style.css" />
-    <link rel="icon" type="image/png" href="/img/favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bellota:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <title>Bateria</title>
-  </head>
 
-  <body>
-    <div class="iconoMenu" onclick="abrirMenu()">
-      <img
-        src="/img/openMenu.png"
-        alt="imagen de menu hamburguesa"
-        id="iconoMenu"
-      />
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/bateria/style.css" />
+  <link rel="icon" type="image/png" href="/img/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@300&display=swap" rel="stylesheet" />
+  <title>Bateria</title>
+</head>
 
-    <div class="contenedorMenu" id="menuHamburguesa">
-      <ul>
-        <li><a href="/bateria/index.html">Instrumento Percusion</a></li>
-        <li><a href="/guitarra/guitarra.html">Instrumento Cuerda</a></li>
-      </ul>
-    </div>
-    <header>
-      <h1>Batería</h1>
-      <h2>
-        Usa nuestra baqueta para pulsar en los diferentes partes de nuestra
-        batería o si lo prefieres usa las teclas de tu teclado para conseguir
-        melodías rítmicas!
-      </h2>
-      <h3>Para tocar la batería pon tu móvil en horizontal</h3>
-    </header>
-    <div class="gifMovil"></div>
-    <main>
-      <section id="bateria">
-        <div id="cursorLayer"></div>
-        <div
-          id="platilloIzquierdoAlto"
-          onclick="tocarPlatilloIzquierdoAlto()"
-        ></div>
-        <div
-          id="platilloIzquierdoBajo"
-          onclick="tocarPlatilloIzquierdoBajo()"
-        ></div>
-        <div id="platilloDerecho" onclick="tocarPlatilloDerecho()"></div>
-        <div id="tamborIzquierdo" onclick="tocarTamborIzquierdo()"></div>
-        <div id="bombo" onclick="tocarBombo()"></div>
-        <div id="tamborDerecho" onclick="tocarTamborDerecho()"></div>
-        <div id="izquierdoSuperior" onclick="tocarIzquierdoSuperior()"></div>
-        <div id="derechoSuperior" onclick="tocarDerechoSuperior()"></div>
+<body>
+  <div class="iconoMenu" onclick="abrirMenu()">
+    <img src="/img/openMenu.png" alt="imagen de menu hamburguesa" id="iconoMenu" />
+  </div>
 
-        <audio
-          id="sonidoPlatilloIzquierdoAlto"
-          src="/sonidos/platillo_1.mp3"
-          type="mp3"
-        ></audio>
-        <audio
-          id="sonidoPlatilloIzquierdoBajo"
-          src="/sonidos/platillo_2.mp3"
-          type="mp3"
-        ></audio>
-        <audio
-          id="sonidoPlatilloDerecho"
-          src="/sonidos/platillo_4.mp3"
-          type="mp3"
-        ></audio>
-        <audio
-          id="sonidoTamborIzquierdo"
-          src="/sonidos/bombo_2.mp3"
-          type="mp3"
-        ></audio>
-        <audio id="sonidoBombo" src="/sonidos/bombo_1.mp3" type="mp3"></audio>
-        <audio
-          id="sonidoTamborDerecho"
-          src="/sonidos/bombo_2.mp3"
-          type="mp3"
-        ></audio>
-        <audio
-          id="sonidoIzquierdoSuperior"
-          src="/sonidos/bombo_4.mp3"
-          type="mp3"
-        ></audio>
-        <audio
-          id="sonidoDerechoSuperior"
-          src="/sonidos/bombo_5.mp3"
-          type="mp3"
-        ></audio>
-      </section>
+  <div class="contenedorMenu" id="menuHamburguesa">
+    <ul>
+      <li><a href="/bateria/index.html">Instrumento Percusion</a></li>
+      <li><a href="/guitarra/guitarra.html">Instrumento Cuerda</a></li>
+    </ul>
+  </div>
+  <header>
+    <h1>Batería</h1>
+    <h2>
+      Usa nuestra baqueta para pulsar en los diferentes partes de nuestra
+      batería o si lo prefieres usa las teclas de tu teclado para conseguir
+      melodías rítmicas!
+    </h2>
+    <h3>Para tocar la batería pon tu móvil en horizontal</h3>
+  </header>
+  <div class="gifMovil"></div>
+  <main>
+    <section id="bateria">
+      <div id="cursorLayer"></div>
+      <div id="platilloIzquierdoAlto" onclick="tocarPlatilloIzquierdoAlto()"></div>
+      <div id="platilloIzquierdoBajo" onclick="tocarPlatilloIzquierdoBajo()"></div>
+      <div id="platilloDerecho" onclick="tocarPlatilloDerecho()"></div>
+      <div id="tamborIzquierdo" onclick="tocarTamborIzquierdo()"></div>
+      <div id="bombo" onclick="tocarBombo()"></div>
+      <div id="tamborDerecho" onclick="tocarTamborDerecho()"></div>
+      <div id="izquierdoSuperior" onclick="tocarIzquierdoSuperior()"></div>
+      <div id="derechoSuperior" onclick="tocarDerechoSuperior()"></div>
 
-      <section id="leyenda">
-        <h3 class="tituloTeclas">Teclas</h3>
-        <div class="contenedorTeclas">
-          <article>
-            <div class="tecla" id="s">S</div>
-            <p>Platillo izquierdo</p>
-          </article>
-          <article>
-            <div class="tecla" id="d">D</div>
-            <p>Platillo doble</p>
-          </article>
-          <article>
-            <div class="tecla" id="f">F</div>
-            <p>Tambor izquierdo</p>
-          </article>
-          <article>
-            <div class="tecla" id="g">G</div>
-            <p>Timbal izquierdo</p>
-          </article>
-          <article>
-            <div class="tecla" id="h">H</div>
-            <p>Bombo</p>
-          </article>
-          <article>
-            <div class="tecla" id="j">J</div>
-            <p>Timbal derecho</p>
-          </article>
-          <article>
-            <div class="tecla" id="k">K</div>
-            <p>Tambor derecho</p>
-          </article>
-          <article>
-            <div class="tecla" id="l">L</div>
-            <p>Platillo derecho</p>
-          </article>
-        </div>
-      </section>
-    </main>
+      <audio id="sonidoPlatilloIzquierdoAlto" src="/sonidos/platillo_1.mp3" type="mp3"></audio>
+      <audio id="sonidoPlatilloIzquierdoBajo" src="/sonidos/platillo_2.mp3" type="mp3"></audio>
+      <audio id="sonidoPlatilloDerecho" src="/sonidos/platillo_4.mp3" type="mp3"></audio>
+      <audio id="sonidoTamborIzquierdo" src="/sonidos/bombo_2.mp3" type="mp3"></audio>
+      <audio id="sonidoBombo" src="/sonidos/bombo_1.mp3" type="mp3"></audio>
+      <audio id="sonidoTamborDerecho" src="/sonidos/bombo_2.mp3" type="mp3"></audio>
+      <audio id="sonidoIzquierdoSuperior" src="/sonidos/bombo_4.mp3" type="mp3"></audio>
+      <audio id="sonidoDerechoSuperior" src="/sonidos/bombo_5.mp3" type="mp3"></audio>
+    </section>
 
-    <script src="/bateria/script.js"></script>
-  </body>
+    <section id="leyenda">
+      <h3 class="tituloTeclas">Teclas</h3>
+      <div class="contenedorTeclas">
+        <article>
+          <div class="tecla" id="s">S</div>
+          <p>Platillo izquierdo</p>
+        </article>
+        <article>
+          <div class="tecla" id="d">D</div>
+          <p>Platillo doble</p>
+        </article>
+        <article>
+          <div class="tecla" id="f">F</div>
+          <p>Tambor izquierdo</p>
+        </article>
+        <article>
+          <div class="tecla" id="g">G</div>
+          <p>Timbal izquierdo</p>
+        </article>
+        <article>
+          <div class="tecla" id="h">H</div>
+          <p>Bombo</p>
+        </article>
+        <article>
+          <div class="tecla" id="j">J</div>
+          <p>Timbal derecho</p>
+        </article>
+        <article>
+          <div class="tecla" id="k">K</div>
+          <p>Tambor derecho</p>
+        </article>
+        <article>
+          <div class="tecla" id="l">L</div>
+          <p>Platillo derecho</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="/bateria/script.js"></script>
+</body>
+
 </html>
