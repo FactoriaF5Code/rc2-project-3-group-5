@@ -31,6 +31,15 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    font-size: 2.84vh;
+    font-family: Bellota;
+    color: white;
+    text-align: center;
+    width: 65%;
+    display: none;
+}
+
 main {
     display: flex;
     align-items: center;
@@ -45,7 +54,7 @@ p {
 
 
 #guitarra {
-    background-image: url(../guitarra.jpg);
+    background-image: url(/img/guitarra.jpg);
     height: 65.19vh;
     width: 58.98vw;
     background-size: cover;
@@ -116,8 +125,6 @@ p {
     rotate: -0.5deg;
 }
 
-/* ... (Otros estilos) ... */
-
 #cursorLayer {
     position: fixed;
     top: 0;
@@ -126,17 +133,13 @@ p {
     height: 100%;
     pointer-events: auto;
     z-index: 0;
-    /* Asegura que el cursor esté en la parte superior */
 }
 
 #customCursor {
     position: absolute;
     width: 150px;
-    /* Ancho de la imagen de cursor personalizado */
     height: 150px;
-    /* Alto de la imagen de cursor personalizado */
-    background: url('../pua-de-guitarra.png') no-repeat;
-    /* URL de la imagen personalizada */
+    background: url('/img/pua-de-guitarra.png') no-repeat;
     background-size: cover;
     rotate: 45deg;
     z-index: 3;
@@ -258,7 +261,7 @@ a {
     display: none;
 }
 
-.tipoGuitarra  {
+.tipoGuitarra {
     width: 10%;
     position: absolute;
     top: 87.2vh;
@@ -271,4 +274,56 @@ a {
 
 #acustica {
     display: block;
+}
+
+.gifMovil {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    h3 {
+        display: block;
+    }
+
+    #guitarra {
+        display: none;
+    }
+
+    .switch {
+        display: none;
+    }
+
+    h2 {
+        display: none;
+    }
+
+    .tipoGuitarra {
+        display: none;
+    }
+
+    #acustica {
+        display: none;
+    }
+
+    .iconoMenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        left: 0px;
+        top: 20px;
+    }
+
+    .gifMovil {
+        display: block;
+        width: 200px;
+        height: 200px;
+        margin-top: 50px;
+        filter: invert(100);
+        background-image: url(/img/gitMovil.gif);
+        background-size: cover;
+        box-shadow: 0px 0px 80px 50px rgba(255, 255, 255, 1);
+    }
+
 }
