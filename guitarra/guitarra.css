@@ -31,6 +31,15 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    font-size: 2.84vh;
+    font-family: Bellota;
+    color: white;
+    text-align: center;
+    width: 65%;
+    display: none;
+}
+
 main {
     display: flex;
     align-items: center;
@@ -271,4 +280,57 @@ a {
 
 #acustica {
     display: block;
+}
+
+.gifMovil {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    h3 {
+        display: block;
+    }
+
+    #guitarra {
+        display: none;
+    }
+
+    .switch {
+        display: none;
+    }
+
+    h2 {
+        display: none;
+    }
+
+    .tipoGuitarra {
+        display: none;
+    }
+
+    #acustica {
+        display: none;
+    }
+
+    .iconoMenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        left: 0px;
+        top: 20px;
+    }
+
+    .gifMovil {
+        display: block;
+        width: 200px;
+        height: 200px;
+        margin-top: 50px;
+        filter: invert(100);
+        background-image: url(../gitMovil.gif);
+        background-size: cover;
+        box-shadow: 0px 0px 80px 50px rgba(255,255,255,1);
+    }
+
+
 }

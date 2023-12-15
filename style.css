@@ -304,13 +304,19 @@ a {
     display: none;
 }
 
+.gifMovil {
+    display: none;
+}
+
 
 @media screen and (max-width: 768px) {
     #leyenda {
         display: none;
     }
 
-    ;
+    h1 {
+        width: 100%;
+    }
 
     h2 {
         display: none;
@@ -324,8 +330,28 @@ a {
         display: none;
     }
 
+    .iconoMenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        left: 0px;
+        top: 20px;
+    }
 
+    .gifMovil {
+        display: block;
+        width: 200px;
+        height: 200px;
+        margin-top: 50px;
+        filter: invert(100);
+        background-image: url(../gitMovil.gif);
+        background-size: cover;
+        box-shadow: 0px 0px 80px 50px rgba(255,255,255,1);
+    }
 
-
+    main {
+        display: none; 
+    }
 
 }
