@@ -1,0 +1,329 @@
+body {
+    cursor: none;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #070708, #070708, #363945, #363945);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 0px;
+    font-size: 7.03vh;
+    font-family: Pacifico;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    width: 65%;
+    font-size: 2.84vh;
+    font-family: Bellota;
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2.84vh;
+    font-family: Bellota;
+    color: white;
+    text-align: center;
+    width: 65%;
+    display: none;
+}
+
+main {
+    display: flex;
+    align-items: center;
+}
+
+p {
+    font-family: Bellota;
+    font-size: 2.15vh;
+    color: white;
+    margin-left: 0.488vw;
+}
+
+
+#guitarra {
+    background-image: url(/img/guitarra.jpg);
+    height: 65.19vh;
+    width: 58.98vw;
+    background-size: cover;
+    box-shadow: 0px 0px 30px 10px rgba(252, 245, 245, 0.25);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+#cuerda1 {
+    background-color: rgb(30, 255, 0);
+    width: 54vw;
+    height: 0.5vh;
+    margin-top: 24.8vh;
+    margin-left: 5vw;
+    opacity: 0;
+    rotate: 0.3deg;
+}
+
+#cuerda2 {
+    background-color: aqua;
+    width: 54vw;
+    height: 0.5vh;
+    margin-top: 2.6vh;
+    margin-left: 5vw;
+    opacity: 0;
+    rotate: 0.3deg;
+}
+
+#cuerda3 {
+    background-color: rgb(238, 0, 255);
+    width: 54vw;
+    height: 0.5vh;
+    margin-top: 2.7vh;
+    margin-left: 5vw;
+    opacity: 0;
+}
+
+#cuerda4 {
+    background-color: blue;
+    width: 54vw;
+    height: 0.5vh;
+    margin-top: 2.95vh;
+    margin-left: 5vw;
+    opacity: 0;
+
+}
+
+#cuerda5 {
+    background-color: coral;
+    width: 54vw;
+    height: 0.5vh;
+    margin-top: 2.8vh;
+    margin-left: 5vw;
+    opacity: 0;
+    rotate: -0.5deg;
+
+}
+
+#cuerda6 {
+    background-color: rgb(217, 217, 17);
+    width: 54vw;
+    height: 0.5vh;
+    margin-top: 2.8vh;
+    margin-left: 5vw;
+    opacity: 0;
+    rotate: -0.5deg;
+}
+
+#cursorLayer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: auto;
+    z-index: 0;
+}
+
+#customCursor {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: url('/img/pua-de-guitarra.png') no-repeat;
+    background-size: cover;
+    rotate: 45deg;
+    z-index: 3;
+}
+
+.iconoMenu {
+    top: 50px;
+    left: 50px;
+    padding: 5px;
+    position: absolute;
+    z-index: 2;
+}
+
+.iconoMenu img {
+    vertical-align: top;
+    width: 40px;
+    cursor: pointer;
+    filter: invert(100%);
+}
+
+.contenedorMenu {
+    background-color: rgb(42, 42, 42);
+    box-shadow: 2px 0px 5px 2px rgb(66, 66, 66);
+    width: 300px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+    z-index: 1;
+    opacity: 0;
+
+}
+
+.contenedorMenu ul {
+    padding: 100px 0px 20px 0px;
+    list-style: none;
+}
+
+.contenedorMenu ul li {
+    color: rgb(228, 228, 228);
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 50px;
+
+}
+
+.contenedorMenu ul li:hover {
+    background-color: rgb(28, 28, 28);
+}
+
+.active {
+    transform: translate(-600px);
+}
+
+.opacity {
+    background-color: #070708;
+    transition: all .5s ease;
+}
+
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(228, 228, 228);
+    font-family: Bellota;
+}
+
+.wire {
+    position: absolute;
+    left: calc(50% - 2px);
+    bottom: 50%;
+    width: 4px;
+    height: 60vh;
+    background: #000;
+    z-index: 1;
+}
+
+.switch {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(#eee, #ccc, #eee);
+    border: 3px solid #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.switch .btn {
+    position: relative;
+    width: 25px;
+    height: 40px;
+    background: linear-gradient(#777, #fff, #777);
+    border-radius: 6px;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+.switch .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    background: linear-gradient(#fff, #fff);
+    border-radius: 4px;
+}
+
+.on .switch .btn::before {
+    top: 15%;
+}
+
+#audio {
+    display: none;
+}
+
+.tipoGuitarra {
+    width: 10%;
+    position: absolute;
+    top: 87.2vh;
+    left: 84vw;
+}
+
+#electrica {
+    display: none;
+}
+
+#acustica {
+    display: block;
+}
+
+.gifMovil {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    h3 {
+        display: block;
+    }
+
+    #guitarra {
+        display: none;
+    }
+
+    .switch {
+        display: none;
+    }
+
+    h2 {
+        display: none;
+    }
+
+    .tipoGuitarra {
+        display: none;
+    }
+
+    #acustica {
+        display: none;
+    }
+
+    .iconoMenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        left: 0px;
+        top: 20px;
+    }
+
+    .gifMovil {
+        display: block;
+        width: 200px;
+        height: 200px;
+        margin-top: 50px;
+        filter: invert(100);
+        background-image: url(/img/gitMovil.gif);
+        background-size: cover;
+        box-shadow: 0px 0px 80px 50px rgba(255, 255, 255, 1);
+    }
+
+}
