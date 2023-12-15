@@ -1,0 +1,352 @@
+body {
+    cursor: none;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #070708, #070708, #363945, #363945);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h1 {
+    margin-bottom: 0px;
+    font-size: 7.03vh;
+    width: 30vw;
+    font-family: Pacifico;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.84vh;
+    font-family: Bellota;
+    color: white;
+    text-align: center;
+    width: 65%;
+}
+
+h3 {
+    font-size: 2.84vh;
+    font-family: Bellota;
+    color: white;
+    text-align: center;
+    width: 65%;
+    display: none;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    height: 65.19vh;
+    width: 58.98vw;
+
+}
+
+#leyenda {
+    height: 65.19vh;
+    position: absolute;
+    right: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tituloTeclas {
+    background-color: #D1D0CF;
+    width: 24.05vh;
+    height: 3.17vw;
+    border-radius: 10px;
+    font-size: 4.71vh;
+    font-family: Bellota;
+    color: #363945;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.contenedorTeclas {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+article {
+    height: 55px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.tecla {
+    width: 2.68vw;
+    height: 5.39vh;
+    background-color: #D1D0CF;
+    border-radius: 10px;
+    font-family: Bellota;
+    font-size: 4.71vh;
+    color: #363945;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+p {
+    font-family: Bellota;
+    font-size: 2.15vh;
+    color: white;
+    margin-left: 0.488vw;
+}
+
+
+#bateria {
+    background-image: url(/img/bateria.png);
+    height: 65.19vh;
+    width: 58.98vw;
+    background-size: cover;
+    box-shadow: 0px 0px 30px 10px rgba(252, 245, 245, 0.25);
+    overflow: hidden;
+}
+
+#platilloDerecho {
+    background-color: rgb(30, 255, 0);
+    width: 27.0vw;
+    height: 27.42vh;
+    border-radius: 50%;
+    margin-top: -39.67vh;
+    margin-left: 44.33vw;
+    opacity: 0;
+}
+
+#platilloIzquierdoAlto {
+    background-color: aqua;
+    width: 19.93vw;
+    height: 19.56vh;
+    border-radius: 50%;
+    margin-top: 2.44vh;
+    margin-left: -3.41vw;
+    opacity: 0;
+}
+
+#platilloIzquierdoBajo {
+    background-color: rgb(238, 0, 255);
+    width: 17.22916vw;
+    height: 15.66667vh;
+    border-radius: 50%;
+    margin-top: 2.77778vh;
+    margin-left: -1.5625vw;
+    opacity: 0;
+    transform: rotate(-7deg);
+}
+
+#tamborIzquierdo {
+    background-color: blue;
+    width: 16.46875vw;
+    height: 19.29630vh;
+    border-radius: 50%;
+    margin-top: 14.81481vh;
+    margin-left: 3.64583vw;
+    opacity: 0;
+    transform: rotate(-5deg);
+
+}
+
+#bombo {
+    background-color: coral;
+    width: 17.27083vw;
+    height: 29.55556vh;
+    border-radius: 50%;
+    margin-top: -21.29630vh;
+    margin-left: 21.39583vw;
+    opacity: 0;
+
+}
+
+#tamborDerecho {
+    background-color: rgb(217, 217, 17);
+    width: 20.05417vw;
+    height: 20.11111vh;
+    border-radius: 50%;
+    margin-top: -31.40741vh;
+    margin-left: 39.1875vw;
+    transform: rotate(6deg);
+    opacity: 0;
+
+}
+
+#izquierdoSuperior {
+    width: 10.45833vw;
+    height: 16.59259vh;
+    background-color: midnightblue;
+    border-radius: 50%;
+    margin-top: -45.77778vh;
+    margin-left: 17.22917vw;
+    opacity: 0;
+
+}
+
+#derechoSuperior {
+    width: 11.5vw;
+    height: 16.59259vh;
+    background-color: chocolate;
+    border-radius: 50%;
+    margin-top: -16.59259vh;
+    margin-left: 31.85417vw;
+    opacity: 0;
+
+}
+
+#cursorLayer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: auto;
+    z-index: 0;
+
+}
+
+#customCursor {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: url('/img/baqueta.png') no-repeat;
+    background-size: cover;
+    rotate: 45deg;
+    z-index: 3;
+}
+
+.iconoMenu {
+    top: 50px;
+    left: 50px;
+    padding: 5px;
+    position: absolute;
+    z-index: 2;
+}
+
+.iconoMenu img {
+    width: 40px;
+    vertical-align: top;
+    cursor: pointer;
+    filter: invert(100%);
+}
+
+.contenedorMenu {
+    background-color: rgb(42, 42, 42);
+    box-shadow: 2px 0px 5px 2px rgb(66, 66, 66);
+    width: 300px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+    z-index: 1;
+    opacity: 0;
+
+}
+
+.contenedorMenu ul {
+    padding: 100px 0px 20px 0px;
+    list-style: none;
+}
+
+.contenedorMenu ul li {
+    color: rgb(228, 228, 228);
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 50px;
+
+}
+
+.contenedorMenu ul li:hover {
+    background-color: rgb(28, 28, 28);
+}
+
+.active {
+    transform: translate(-600px);
+}
+
+.opacity {
+    background-color: #070708;
+    transition: all .5s ease;
+}
+
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(228, 228, 228);
+    font-family: Bellota;
+}
+
+.imagenParaMovil {
+    display: none;
+}
+
+#sonidoMovilTambor {
+    background-image: url(https://www.google.es/imgres?imgurl=https%3A%2F%2Fthumbs.static-thomann.de%2Fthumb%2F%2Fthumb1000x%2Fpics%2Fcms%2Fimage%2Fguide%2Fes%2Fonline_guide_cymbals%2Ftps_1335_198899_19305_198899.jpg&tbnid=fVUtT-zSs8AOCM&vet=12ahUKEwjcksGv2Y6DAxVOTqQEHf3jDPwQMygCegQIARB4..i&imgrefurl=https%3A%2F%2Fwww.thomann.de%2Fes%2Fonlineexpert_page_platillos_platillos_de_bateria.html&docid=3A4Q4QLi-ZI2nM&w=1000&h=656&q=platillo&ved=2ahUKEwjcksGv2Y6DAxVOTqQEHf3jDPwQMygCegQIARB4);
+    display: none;
+}
+
+.gifMovil {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    #leyenda {
+        display: none;
+    }
+
+    h1 {
+        width: 100%;
+    }
+
+    h2 {
+        display: none;
+    }
+
+    h3 {
+        display: block;
+    }
+
+    section {
+        display: none;
+    }
+
+    .iconoMenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        left: 0px;
+        top: 20px;
+    }
+
+    .gifMovil {
+        display: block;
+        width: 200px;
+        height: 200px;
+        margin-top: 50px;
+        filter: invert(100);
+        background-image: url(/img/gitMovil.gif);
+        background-size: cover;
+        box-shadow: 0px 0px 80px 50px rgba(255, 255, 255, 1);
+    }
+
+    main {
+        display: none;
+    }
+
+}
